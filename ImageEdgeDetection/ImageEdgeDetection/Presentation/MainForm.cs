@@ -25,5 +25,7 @@ namespace ImageEdgeDetection.Presentation
         {
 
         }
+
+        
     }
 }
