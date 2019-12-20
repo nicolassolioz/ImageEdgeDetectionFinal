@@ -11,13 +11,13 @@ namespace ImageEdgeDetection.Business
 {
     class EdgeFilter
     {
-        public static Bitmap prewittEdge(Bitmap importedImg)
+        public Bitmap prewittEdge(Bitmap importedImg)
         {
             Bitmap modifiedImg = ExtBitmap.PrewittFilter(importedImg, true);
             return modifiedImg;
         }
 
-        public static Bitmap gaussianEdge(Bitmap importedImg)
+        public Bitmap gaussianEdge(Bitmap importedImg)
         {
             Bitmap modifiedImg = ExtBitmap.LaplacianOfGaussianFilter(importedImg);
             return modifiedImg;

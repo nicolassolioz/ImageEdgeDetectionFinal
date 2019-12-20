@@ -45,10 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\HelloWorld.cs" />
-    <Compile Include="Business\IHelloWorld.cs" />
-    <Compile Include="IOFiles\HelloUniverse.cs" />
-    <Compile Include="IOFiles\IHelloUniverse.cs" />
+    <Compile Include="Business\Calculations\ExtBitmap.cs" />
+    <Compile Include="Business\Calculations\Matrix.cs" />
+    <Compile Include="Business\EdgeFilter.cs" />
+    <Compile Include="Business\ILogicController.cs" />
+    <Compile Include="Business\ImageFilter.cs" />
+    <Compile Include="Business\LogicController.cs" />
+    <Compile Include="IOFiles\IReadWriteController.cs" />
+    <Compile Include="IOFiles\ReadWriteController.cs" />
     <Compile Include="Presentation\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -6,11 +6,11 @@ using System.Drawing;
 
 namespace ImageEdgeDetection.Business
 {
-    public static class ImageFilters
+    class ImageFilter
     {
 
         //Zen Filter apply color filter at your own taste
-        public static Bitmap ZenFilter(Bitmap bmp, int alpha, int red, int blue, int green)
+        public Bitmap zenFilter(Bitmap bmp, int alpha, int red, int blue, int green)
         {
 
             Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
@@ -55,7 +55,7 @@ namespace ImageEdgeDetection.Business
 
 
         //Rainbow Filter
-        public static Bitmap RainbowFilter(Bitmap bmp)
+        public Bitmap rainbowFilter(Bitmap bmp)
         {
 
             Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
@@ -92,7 +92,7 @@ namespace ImageEdgeDetection.Business
         }
 
         // Swap Filter
-        public static Bitmap Swap(Bitmap bmp)
+        public Bitmap swapFilter(Bitmap bmp)
         {
             Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
 

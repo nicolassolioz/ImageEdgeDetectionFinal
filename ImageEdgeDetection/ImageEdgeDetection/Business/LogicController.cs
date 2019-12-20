@@ -20,15 +20,34 @@ namespace ImageEdgeDetection.Business
         public Bitmap prewittEdge(Bitmap importedImg)
         {
             EdgeFilter edgeFilter = new EdgeFilter();
-            return importedImg;
+            return edgeFilter.prewittEdge(importedImg);
             
         }
 
         public Bitmap gaussianEdge(Bitmap importedImg)
         {
             EdgeFilter edgeFilter = new EdgeFilter();
-            return importedImg;
+            return edgeFilter.gaussianEdge(importedImg);
         }
+
+        public Bitmap zenFilter(Bitmap importedImg)
+        {
+            ImageFilter imageFilter = new ImageFilter();
+            return imageFilter.zenFilter(importedImg, 1, 10, 1, 1);
+        }
+
+        public Bitmap rainbowFilter(Bitmap importedImg)
+        {
+            ImageFilter imageFilter = new ImageFilter();
+            return imageFilter.rainbowFilter(importedImg);
+        }
+
+        public Bitmap swapFilter(Bitmap importedImg)
+        {
+            ImageFilter imageFilter = new ImageFilter();
+            return imageFilter.swapFilter(importedImg);
+        }
+
 
 
     }
