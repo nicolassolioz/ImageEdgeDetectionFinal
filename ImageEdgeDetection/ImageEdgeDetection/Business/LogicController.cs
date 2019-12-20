@@ -20,8 +20,7 @@ namespace ImageEdgeDetection.Business
         public Bitmap prewittEdge(Bitmap importedImg)
         {
             EdgeFilter edgeFilter = new EdgeFilter();
-            return edgeFilter.prewittEdge(importedImg);
-            
+            return edgeFilter.prewittEdge(importedImg);         
         }
 
         public Bitmap gaussianEdge(Bitmap importedImg)
@@ -47,8 +46,5 @@ namespace ImageEdgeDetection.Business
             ImageFilter imageFilter = new ImageFilter();
             return imageFilter.swapFilter(importedImg);
         }
-
-
-
     }
 }
