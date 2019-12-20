@@ -51,8 +51,10 @@
     <Compile Include="Business\ILogicController.cs" />
     <Compile Include="Business\ImageFilter.cs" />
     <Compile Include="Business\LogicController.cs" />
+    <Compile Include="IOFiles\GetImage.cs" />
     <Compile Include="IOFiles\IReadWriteController.cs" />
     <Compile Include="IOFiles\ReadWriteController.cs" />
+    <Compile Include="IOFiles\SaveImage.cs" />
     <Compile Include="Presentation\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
