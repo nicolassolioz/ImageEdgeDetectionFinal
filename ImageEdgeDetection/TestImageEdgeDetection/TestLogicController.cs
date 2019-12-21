@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestImageEdgeDetection.IOFiles
+namespace TestImageEdgeDetection
 {
-    class TestGetImage
+    class TestLogicController
     {
     }
 }
