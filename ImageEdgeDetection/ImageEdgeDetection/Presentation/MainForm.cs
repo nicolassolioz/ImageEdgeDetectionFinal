@@ -40,7 +40,7 @@ namespace ImageEdgeDetection.Presentation
 
             //apply filter to image     
             if (checkBoxZenFilter.Checked)
-                previewBitmap = logicController.zenFilter(previewBitmap);
+                previewBitmap = logicController.zenFilter(previewBitmap,1,10,1,1);
 
             if (checkBoxRainbowFilter.Checked)
                 previewBitmap = logicController.rainbowFilter(previewBitmap);

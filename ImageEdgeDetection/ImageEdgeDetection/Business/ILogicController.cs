@@ -16,6 +16,6 @@ namespace ImageEdgeDetection.Business
         Bitmap swapFilter(Bitmap bmp);
         void writeImage(Bitmap bmp);
         Bitmap readImage();
-
+        Bitmap zenFilter(Bitmap previewBitmap);
     }
 }
