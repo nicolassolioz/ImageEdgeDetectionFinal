@@ -1,9 +1,0 @@
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe.config
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csprojAssemblyReference.cache
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.Presentation.MainForm.resources
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.Properties.Resources.resources
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.exe
-C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.pdb
