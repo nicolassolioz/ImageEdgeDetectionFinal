@@ -31,6 +31,7 @@ namespace ImageEdgeDetection.Presentation
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.picPreview = new System.Windows.Forms.PictureBox();
             this.buttonLoad = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -49,120 +50,135 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.picPreview.AccessibleName = "picPreview";
             this.picPreview.BackColor = System.Drawing.Color.Silver;
+            this.picPreview.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picPreview.BackgroundImage")));
             this.picPreview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPreview.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.picPreview.Location = new System.Drawing.Point(12, 12);
+            this.picPreview.Location = new System.Drawing.Point(12, 23);
             this.picPreview.Name = "picPreview";
-            this.picPreview.Size = new System.Drawing.Size(628, 596);
+            this.picPreview.Size = new System.Drawing.Size(707, 623);
             this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 13;
             this.picPreview.TabStop = false;
             // 
             // buttonLoad
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(12, 614);
+            this.buttonLoad.Location = new System.Drawing.Point(12, 652);
             this.buttonLoad.Name = "buttonLoad";
             this.buttonLoad.Size = new System.Drawing.Size(193, 70);
             this.buttonLoad.TabIndex = 14;
-            this.buttonLoad.Text = "buttonLoad";
+            this.buttonLoad.Text = "Load";
             this.buttonLoad.UseVisualStyleBackColor = true;
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(557, 614);
+            this.buttonSave.Enabled = false;
+            this.buttonSave.Location = new System.Drawing.Point(526, 652);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(193, 70);
             this.buttonSave.TabIndex = 15;
-            this.buttonSave.Text = "buttonSave";
+            this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // checkBoxSwapFilter
             // 
             this.checkBoxSwapFilter.AutoSize = true;
-            this.checkBoxSwapFilter.Location = new System.Drawing.Point(649, 96);
+            this.checkBoxSwapFilter.Enabled = false;
+            this.checkBoxSwapFilter.Location = new System.Drawing.Point(741, 172);
             this.checkBoxSwapFilter.Name = "checkBoxSwapFilter";
-            this.checkBoxSwapFilter.Size = new System.Drawing.Size(80, 17);
+            this.checkBoxSwapFilter.Size = new System.Drawing.Size(53, 17);
             this.checkBoxSwapFilter.TabIndex = 16;
-            this.checkBoxSwapFilter.Text = "checkBoxSwapFilter";
+            this.checkBoxSwapFilter.Text = "Swap";
             this.checkBoxSwapFilter.UseVisualStyleBackColor = true;
+            this.checkBoxSwapFilter.CheckedChanged += new System.EventHandler(this.checkBoxSwapFilter_CheckedChanged);
             // 
             // checkBoxRainbowFilter
             // 
             this.checkBoxRainbowFilter.AutoSize = true;
-            this.checkBoxRainbowFilter.Location = new System.Drawing.Point(649, 130);
+            this.checkBoxRainbowFilter.Enabled = false;
+            this.checkBoxRainbowFilter.Location = new System.Drawing.Point(741, 206);
             this.checkBoxRainbowFilter.Name = "checkBoxRainbowFilter";
-            this.checkBoxRainbowFilter.Size = new System.Drawing.Size(80, 17);
+            this.checkBoxRainbowFilter.Size = new System.Drawing.Size(68, 17);
             this.checkBoxRainbowFilter.TabIndex = 17;
-            this.checkBoxRainbowFilter.Text = "checkBoxRainbowFilter";
+            this.checkBoxRainbowFilter.Text = "Rainbow";
             this.checkBoxRainbowFilter.UseVisualStyleBackColor = true;
+            this.checkBoxRainbowFilter.CheckedChanged += new System.EventHandler(this.checkBoxRainbowFilter_CheckedChanged);
             // 
             // checkBoxZenFilter
             // 
             this.checkBoxZenFilter.AutoSize = true;
-            this.checkBoxZenFilter.Location = new System.Drawing.Point(649, 168);
+            this.checkBoxZenFilter.Enabled = false;
+            this.checkBoxZenFilter.Location = new System.Drawing.Point(741, 244);
             this.checkBoxZenFilter.Name = "checkBoxZenFilter";
-            this.checkBoxZenFilter.Size = new System.Drawing.Size(80, 17);
+            this.checkBoxZenFilter.Size = new System.Drawing.Size(45, 17);
             this.checkBoxZenFilter.TabIndex = 18;
-            this.checkBoxZenFilter.Text = "checkBoxZenFilter";
+            this.checkBoxZenFilter.Text = "Zen";
             this.checkBoxZenFilter.UseVisualStyleBackColor = true;
+            this.checkBoxZenFilter.CheckedChanged += new System.EventHandler(this.checkBoxZenFilter_CheckedChanged);
             // 
             // radioGaussianEdge
             // 
             this.radioGaussianEdge.AutoSize = true;
-            this.radioGaussianEdge.Location = new System.Drawing.Point(649, 328);
+            this.radioGaussianEdge.Enabled = false;
+            this.radioGaussianEdge.Location = new System.Drawing.Point(741, 391);
             this.radioGaussianEdge.Name = "radioGaussianEdge";
-            this.radioGaussianEdge.Size = new System.Drawing.Size(85, 17);
+            this.radioGaussianEdge.Size = new System.Drawing.Size(69, 17);
             this.radioGaussianEdge.TabIndex = 19;
             this.radioGaussianEdge.TabStop = true;
-            this.radioGaussianEdge.Text = "radioGaussianEdge";
+            this.radioGaussianEdge.Text = "Gaussian";
             this.radioGaussianEdge.UseVisualStyleBackColor = true;
+            this.radioGaussianEdge.CheckedChanged += new System.EventHandler(this.radioGaussianEdge_CheckedChanged);
             // 
             // radioPrewittEdge
             // 
             this.radioPrewittEdge.AutoSize = true;
-            this.radioPrewittEdge.Location = new System.Drawing.Point(649, 375);
+            this.radioPrewittEdge.Enabled = false;
+            this.radioPrewittEdge.Location = new System.Drawing.Point(741, 438);
             this.radioPrewittEdge.Name = "radioPrewittEdge";
-            this.radioPrewittEdge.Size = new System.Drawing.Size(85, 17);
+            this.radioPrewittEdge.Size = new System.Drawing.Size(57, 17);
             this.radioPrewittEdge.TabIndex = 20;
             this.radioPrewittEdge.TabStop = true;
-            this.radioPrewittEdge.Text = "radioPrewittEdge";
+            this.radioPrewittEdge.Text = "Prewitt";
             this.radioPrewittEdge.UseVisualStyleBackColor = true;
+            this.radioPrewittEdge.CheckedChanged += new System.EventHandler(this.radioPrewittEdge_CheckedChanged);
             // 
             // radioNone
             // 
             this.radioNone.AutoSize = true;
-            this.radioNone.Location = new System.Drawing.Point(649, 424);
+            this.radioNone.Enabled = false;
+            this.radioNone.Location = new System.Drawing.Point(741, 487);
             this.radioNone.Name = "radioNone";
-            this.radioNone.Size = new System.Drawing.Size(85, 17);
+            this.radioNone.Size = new System.Drawing.Size(51, 17);
             this.radioNone.TabIndex = 21;
             this.radioNone.TabStop = true;
-            this.radioNone.Text = "radioNone";
+            this.radioNone.Text = "None";
             this.radioNone.UseVisualStyleBackColor = true;
             // 
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
-            this.labelFilter.Location = new System.Drawing.Point(646, 50);
+            this.labelFilter.Location = new System.Drawing.Point(738, 126);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(35, 13);
+            this.labelFilter.Size = new System.Drawing.Size(118, 13);
             this.labelFilter.TabIndex = 22;
-            this.labelFilter.Text = "labelFilter";
+            this.labelFilter.Text = "Select one or more filter";
             // 
             // labelEdge
             // 
             this.labelEdge.AutoSize = true;
-            this.labelEdge.Location = new System.Drawing.Point(646, 287);
+            this.labelEdge.Location = new System.Drawing.Point(738, 350);
             this.labelEdge.Name = "labelEdge";
-            this.labelEdge.Size = new System.Drawing.Size(35, 13);
+            this.labelEdge.Size = new System.Drawing.Size(107, 13);
             this.labelEdge.TabIndex = 23;
-            this.labelEdge.Text = "labelEdge";
+            this.labelEdge.Text = "Select one edge filter";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 696);
+            this.ClientSize = new System.Drawing.Size(877, 737);
             this.Controls.Add(this.labelEdge);
             this.Controls.Add(this.labelFilter);
             this.Controls.Add(this.radioNone);
