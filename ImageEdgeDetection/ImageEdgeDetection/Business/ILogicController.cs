@@ -14,6 +14,8 @@ namespace ImageEdgeDetection.Business
         Bitmap zenFilter(Bitmap bmp, int alpha, int red, int blue, int green);
         Bitmap rainbowFilter(Bitmap bmp);
         Bitmap swapFilter(Bitmap bmp);
-
+        void writeImage(Bitmap bmp);
+        Bitmap readImage();
+        Bitmap zenFilter(Bitmap previewBitmap);
     }
 }

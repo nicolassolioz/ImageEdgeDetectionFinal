@@ -15,19 +15,7 @@ namespace ImageEdgeDetection.Business
         public LogicController(IReadWriteController readWrite)
         {
             this.readWrite = readWrite;
-        }
-
-        public Bitmap prewittEdge(Bitmap importedImg)
-        {
-            EdgeFilter edgeFilter = new EdgeFilter();
-            return edgeFilter.prewittEdge(importedImg);         
-        }
-
-        public Bitmap gaussianEdge(Bitmap importedImg)
-        {
-            EdgeFilter edgeFilter = new EdgeFilter();
-            return edgeFilter.gaussianEdge(importedImg);
-        }
+        }     
 
         public Bitmap zenFilter(Bitmap importedImg, int alpha, int red, int blue, int green)
         {
@@ -46,5 +34,29 @@ namespace ImageEdgeDetection.Business
             ImageFilter imageFilter = new ImageFilter();
             return imageFilter.swapFilter(importedImg);
         }
+
+        public Bitmap prewittEdge(Bitmap importedImg)
+        {
+            EdgeFilter edgeFilter = new EdgeFilter();
+            return edgeFilter.prewittEdge(importedImg);
+        }
+
+        public Bitmap gaussianEdge(Bitmap importedImg)
+        {
+            EdgeFilter edgeFilter = new EdgeFilter();
+            return edgeFilter.gaussianEdge(importedImg);
+        }
+
+        public Bitmap readImage()
+        {            
+            return readWrite.read();
+        }
+
+        public void writeImage(Bitmap bitmap)
+        {
+            readWrite.write(bitmap);
+        }
+
+
     }
 }
