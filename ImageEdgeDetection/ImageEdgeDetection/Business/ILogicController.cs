@@ -11,7 +11,7 @@ namespace ImageEdgeDetection.Business
     {
         Bitmap prewittEdge(Bitmap importedImg);
         Bitmap gaussianEdge(Bitmap importedImg);
-        Bitmap zenFilter(Bitmap bmp);
+        Bitmap zenFilter(Bitmap bmp, int alpha, int red, int blue, int green);
         Bitmap rainbowFilter(Bitmap bmp);
         Bitmap swapFilter(Bitmap bmp);
 

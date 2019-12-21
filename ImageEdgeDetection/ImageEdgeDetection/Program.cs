@@ -21,6 +21,7 @@ namespace ImageEdgeDetection
             IReadWriteController readWrite = new ReadWriteController();
             ILogicController logicController = new LogicController(readWrite);
             Application.Run(new MainForm(logicController));
+
         }
     }
 }

@@ -29,10 +29,10 @@ namespace ImageEdgeDetection.Business
             return edgeFilter.gaussianEdge(importedImg);
         }
 
-        public Bitmap zenFilter(Bitmap importedImg)
+        public Bitmap zenFilter(Bitmap importedImg, int alpha, int red, int blue, int green)
         {
             ImageFilter imageFilter = new ImageFilter();
-            return imageFilter.zenFilter(importedImg, 1, 10, 1, 1);
+            return imageFilter.zenFilter(importedImg, alpha, red, blue, green);
         }
 
         public Bitmap rainbowFilter(Bitmap importedImg)
