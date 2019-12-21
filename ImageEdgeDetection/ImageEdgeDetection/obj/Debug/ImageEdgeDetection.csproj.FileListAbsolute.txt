@@ -1,8 +1,0 @@
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe.config
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.Presentation.MainForm.resources
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.Properties.Resources.resources
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.exe
-C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.pdb

@@ -56,16 +56,16 @@ namespace ImageEdgeDetection.Presentation
             this.picPreview.Cursor = System.Windows.Forms.Cursors.Cross;
             this.picPreview.Location = new System.Drawing.Point(12, 23);
             this.picPreview.Name = "picPreview";
-            this.picPreview.Size = new System.Drawing.Size(707, 623);
+            this.picPreview.Size = new System.Drawing.Size(519, 495);
             this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 13;
             this.picPreview.TabStop = false;
             // 
             // buttonLoad
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(12, 652);
+            this.buttonLoad.Location = new System.Drawing.Point(12, 524);
             this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(193, 70);
+            this.buttonLoad.Size = new System.Drawing.Size(138, 40);
             this.buttonLoad.TabIndex = 14;
             this.buttonLoad.Text = "Load";
             this.buttonLoad.UseVisualStyleBackColor = true;
@@ -74,9 +74,9 @@ namespace ImageEdgeDetection.Presentation
             // buttonSave
             // 
             this.buttonSave.Enabled = false;
-            this.buttonSave.Location = new System.Drawing.Point(526, 652);
+            this.buttonSave.Location = new System.Drawing.Point(393, 524);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(193, 70);
+            this.buttonSave.Size = new System.Drawing.Size(138, 40);
             this.buttonSave.TabIndex = 15;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = true;
@@ -86,7 +86,7 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.checkBoxSwapFilter.AutoSize = true;
             this.checkBoxSwapFilter.Enabled = false;
-            this.checkBoxSwapFilter.Location = new System.Drawing.Point(741, 172);
+            this.checkBoxSwapFilter.Location = new System.Drawing.Point(552, 110);
             this.checkBoxSwapFilter.Name = "checkBoxSwapFilter";
             this.checkBoxSwapFilter.Size = new System.Drawing.Size(53, 17);
             this.checkBoxSwapFilter.TabIndex = 16;
@@ -98,7 +98,7 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.checkBoxRainbowFilter.AutoSize = true;
             this.checkBoxRainbowFilter.Enabled = false;
-            this.checkBoxRainbowFilter.Location = new System.Drawing.Point(741, 206);
+            this.checkBoxRainbowFilter.Location = new System.Drawing.Point(552, 144);
             this.checkBoxRainbowFilter.Name = "checkBoxRainbowFilter";
             this.checkBoxRainbowFilter.Size = new System.Drawing.Size(68, 17);
             this.checkBoxRainbowFilter.TabIndex = 17;
@@ -110,7 +110,7 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.checkBoxZenFilter.AutoSize = true;
             this.checkBoxZenFilter.Enabled = false;
-            this.checkBoxZenFilter.Location = new System.Drawing.Point(741, 244);
+            this.checkBoxZenFilter.Location = new System.Drawing.Point(552, 182);
             this.checkBoxZenFilter.Name = "checkBoxZenFilter";
             this.checkBoxZenFilter.Size = new System.Drawing.Size(45, 17);
             this.checkBoxZenFilter.TabIndex = 18;
@@ -122,7 +122,7 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.radioGaussianEdge.AutoSize = true;
             this.radioGaussianEdge.Enabled = false;
-            this.radioGaussianEdge.Location = new System.Drawing.Point(741, 391);
+            this.radioGaussianEdge.Location = new System.Drawing.Point(552, 329);
             this.radioGaussianEdge.Name = "radioGaussianEdge";
             this.radioGaussianEdge.Size = new System.Drawing.Size(69, 17);
             this.radioGaussianEdge.TabIndex = 19;
@@ -135,7 +135,7 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.radioPrewittEdge.AutoSize = true;
             this.radioPrewittEdge.Enabled = false;
-            this.radioPrewittEdge.Location = new System.Drawing.Point(741, 438);
+            this.radioPrewittEdge.Location = new System.Drawing.Point(552, 376);
             this.radioPrewittEdge.Name = "radioPrewittEdge";
             this.radioPrewittEdge.Size = new System.Drawing.Size(57, 17);
             this.radioPrewittEdge.TabIndex = 20;
@@ -148,7 +148,7 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.radioNone.AutoSize = true;
             this.radioNone.Enabled = false;
-            this.radioNone.Location = new System.Drawing.Point(741, 487);
+            this.radioNone.Location = new System.Drawing.Point(552, 425);
             this.radioNone.Name = "radioNone";
             this.radioNone.Size = new System.Drawing.Size(51, 17);
             this.radioNone.TabIndex = 21;
@@ -159,7 +159,7 @@ namespace ImageEdgeDetection.Presentation
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
-            this.labelFilter.Location = new System.Drawing.Point(738, 126);
+            this.labelFilter.Location = new System.Drawing.Point(549, 64);
             this.labelFilter.Name = "labelFilter";
             this.labelFilter.Size = new System.Drawing.Size(118, 13);
             this.labelFilter.TabIndex = 22;
@@ -168,7 +168,7 @@ namespace ImageEdgeDetection.Presentation
             // labelEdge
             // 
             this.labelEdge.AutoSize = true;
-            this.labelEdge.Location = new System.Drawing.Point(738, 350);
+            this.labelEdge.Location = new System.Drawing.Point(549, 288);
             this.labelEdge.Name = "labelEdge";
             this.labelEdge.Size = new System.Drawing.Size(107, 13);
             this.labelEdge.TabIndex = 23;
@@ -178,7 +178,7 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 737);
+            this.ClientSize = new System.Drawing.Size(683, 613);
             this.Controls.Add(this.labelEdge);
             this.Controls.Add(this.labelFilter);
             this.Controls.Add(this.radioNone);
