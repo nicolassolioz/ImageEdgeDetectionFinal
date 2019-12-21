@@ -50,35 +50,37 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.picPreview.AccessibleName = "picPreview";
             this.picPreview.BackColor = System.Drawing.Color.Silver;
-            this.picPreview.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picPreview.BackgroundImage")));
             this.picPreview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.picPreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picPreview.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.picPreview.Image = ((System.Drawing.Image)(resources.GetObject("picPreview.Image")));
             this.picPreview.Location = new System.Drawing.Point(12, 23);
             this.picPreview.Name = "picPreview";
-            this.picPreview.Size = new System.Drawing.Size(519, 495);
+            this.picPreview.Size = new System.Drawing.Size(519, 500);
             this.picPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPreview.TabIndex = 13;
             this.picPreview.TabStop = false;
             // 
             // buttonLoad
             // 
-            this.buttonLoad.Location = new System.Drawing.Point(12, 524);
+            this.buttonLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLoad.Location = new System.Drawing.Point(12, 529);
             this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(138, 40);
+            this.buttonLoad.Size = new System.Drawing.Size(192, 40);
             this.buttonLoad.TabIndex = 14;
-            this.buttonLoad.Text = "Load";
+            this.buttonLoad.Text = "Load image";
             this.buttonLoad.UseVisualStyleBackColor = true;
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
             // buttonSave
             // 
             this.buttonSave.Enabled = false;
-            this.buttonSave.Location = new System.Drawing.Point(393, 524);
+            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.Location = new System.Drawing.Point(339, 529);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(138, 40);
+            this.buttonSave.Size = new System.Drawing.Size(192, 40);
             this.buttonSave.TabIndex = 15;
-            this.buttonSave.Text = "Save";
+            this.buttonSave.Text = "Save image";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
@@ -86,9 +88,10 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.checkBoxSwapFilter.AutoSize = true;
             this.checkBoxSwapFilter.Enabled = false;
-            this.checkBoxSwapFilter.Location = new System.Drawing.Point(552, 110);
+            this.checkBoxSwapFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxSwapFilter.Location = new System.Drawing.Point(552, 78);
             this.checkBoxSwapFilter.Name = "checkBoxSwapFilter";
-            this.checkBoxSwapFilter.Size = new System.Drawing.Size(53, 17);
+            this.checkBoxSwapFilter.Size = new System.Drawing.Size(57, 19);
             this.checkBoxSwapFilter.TabIndex = 16;
             this.checkBoxSwapFilter.Text = "Swap";
             this.checkBoxSwapFilter.UseVisualStyleBackColor = true;
@@ -98,9 +101,10 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.checkBoxRainbowFilter.AutoSize = true;
             this.checkBoxRainbowFilter.Enabled = false;
-            this.checkBoxRainbowFilter.Location = new System.Drawing.Point(552, 144);
+            this.checkBoxRainbowFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxRainbowFilter.Location = new System.Drawing.Point(552, 108);
             this.checkBoxRainbowFilter.Name = "checkBoxRainbowFilter";
-            this.checkBoxRainbowFilter.Size = new System.Drawing.Size(68, 17);
+            this.checkBoxRainbowFilter.Size = new System.Drawing.Size(75, 19);
             this.checkBoxRainbowFilter.TabIndex = 17;
             this.checkBoxRainbowFilter.Text = "Rainbow";
             this.checkBoxRainbowFilter.UseVisualStyleBackColor = true;
@@ -110,9 +114,10 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.checkBoxZenFilter.AutoSize = true;
             this.checkBoxZenFilter.Enabled = false;
-            this.checkBoxZenFilter.Location = new System.Drawing.Point(552, 182);
+            this.checkBoxZenFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxZenFilter.Location = new System.Drawing.Point(552, 138);
             this.checkBoxZenFilter.Name = "checkBoxZenFilter";
-            this.checkBoxZenFilter.Size = new System.Drawing.Size(45, 17);
+            this.checkBoxZenFilter.Size = new System.Drawing.Size(47, 19);
             this.checkBoxZenFilter.TabIndex = 18;
             this.checkBoxZenFilter.Text = "Zen";
             this.checkBoxZenFilter.UseVisualStyleBackColor = true;
@@ -122,9 +127,10 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.radioGaussianEdge.AutoSize = true;
             this.radioGaussianEdge.Enabled = false;
-            this.radioGaussianEdge.Location = new System.Drawing.Point(552, 329);
+            this.radioGaussianEdge.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioGaussianEdge.Location = new System.Drawing.Point(552, 328);
             this.radioGaussianEdge.Name = "radioGaussianEdge";
-            this.radioGaussianEdge.Size = new System.Drawing.Size(69, 17);
+            this.radioGaussianEdge.Size = new System.Drawing.Size(77, 19);
             this.radioGaussianEdge.TabIndex = 19;
             this.radioGaussianEdge.TabStop = true;
             this.radioGaussianEdge.Text = "Gaussian";
@@ -135,9 +141,10 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.radioPrewittEdge.AutoSize = true;
             this.radioPrewittEdge.Enabled = false;
-            this.radioPrewittEdge.Location = new System.Drawing.Point(552, 376);
+            this.radioPrewittEdge.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioPrewittEdge.Location = new System.Drawing.Point(552, 358);
             this.radioPrewittEdge.Name = "radioPrewittEdge";
-            this.radioPrewittEdge.Size = new System.Drawing.Size(57, 17);
+            this.radioPrewittEdge.Size = new System.Drawing.Size(62, 19);
             this.radioPrewittEdge.TabIndex = 20;
             this.radioPrewittEdge.TabStop = true;
             this.radioPrewittEdge.Text = "Prewitt";
@@ -148,9 +155,10 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.radioNone.AutoSize = true;
             this.radioNone.Enabled = false;
-            this.radioNone.Location = new System.Drawing.Point(552, 425);
+            this.radioNone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioNone.Location = new System.Drawing.Point(552, 388);
             this.radioNone.Name = "radioNone";
-            this.radioNone.Size = new System.Drawing.Size(51, 17);
+            this.radioNone.Size = new System.Drawing.Size(55, 19);
             this.radioNone.TabIndex = 21;
             this.radioNone.TabStop = true;
             this.radioNone.Text = "None";
@@ -159,18 +167,20 @@ namespace ImageEdgeDetection.Presentation
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
-            this.labelFilter.Location = new System.Drawing.Point(549, 64);
+            this.labelFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFilter.Location = new System.Drawing.Point(549, 48);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(118, 13);
+            this.labelFilter.Size = new System.Drawing.Size(162, 15);
             this.labelFilter.TabIndex = 22;
             this.labelFilter.Text = "Select one or more filter";
             // 
             // labelEdge
             // 
             this.labelEdge.AutoSize = true;
-            this.labelEdge.Location = new System.Drawing.Point(549, 288);
+            this.labelEdge.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEdge.Location = new System.Drawing.Point(549, 298);
             this.labelEdge.Name = "labelEdge";
-            this.labelEdge.Size = new System.Drawing.Size(107, 13);
+            this.labelEdge.Size = new System.Drawing.Size(144, 15);
             this.labelEdge.TabIndex = 23;
             this.labelEdge.Text = "Select one edge filter";
             // 
@@ -178,7 +188,8 @@ namespace ImageEdgeDetection.Presentation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 613);
+            this.ClientSize = new System.Drawing.Size(717, 577);
+            this.Controls.Add(this.picPreview);
             this.Controls.Add(this.labelEdge);
             this.Controls.Add(this.labelFilter);
             this.Controls.Add(this.radioNone);
@@ -189,10 +200,9 @@ namespace ImageEdgeDetection.Presentation
             this.Controls.Add(this.checkBoxSwapFilter);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonLoad);
-            this.Controls.Add(this.picPreview);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "Image convertor";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picPreview)).EndInit();
             this.ResumeLayout(false);

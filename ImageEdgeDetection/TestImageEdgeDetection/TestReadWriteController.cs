@@ -8,5 +8,6 @@ namespace TestImageEdgeDetection
 {
     class TestReadWriteController
     {
+
     }
 }

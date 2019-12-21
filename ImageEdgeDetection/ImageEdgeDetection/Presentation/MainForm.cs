@@ -81,7 +81,9 @@ namespace ImageEdgeDetection.Presentation
         private void buttonLoad_Click(object sender, EventArgs e)
         {
             originalBitmap = logicController.readImage();
-            ApplyFilter();
+            disableCheckboxes();
+            disableRadiobutton();            
+            ApplyFilter();            
         }
 
         // filters action event
@@ -121,6 +123,18 @@ namespace ImageEdgeDetection.Presentation
             checkBoxZenFilter.Enabled = true;
         }
 
+        public void disableCheckboxes()
+        {
+            checkBoxRainbowFilter.Enabled = false;
+            checkBoxRainbowFilter.Checked = false;
+            checkBoxSwapFilter.Enabled = false;
+            checkBoxSwapFilter.Checked = false;
+            checkBoxZenFilter.Enabled = false;
+            checkBoxZenFilter.Checked = false;
+        }
+
+
+
         private void enableRadiobutton()
         {
             radioGaussianEdge.Enabled = true;
@@ -146,10 +160,6 @@ namespace ImageEdgeDetection.Presentation
         {
             buttonSave.Enabled = false;
         }
-
-      
-
-
 
     }
 }
