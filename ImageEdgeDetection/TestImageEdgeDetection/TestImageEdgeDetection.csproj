@@ -47,17 +47,35 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\TestEdgeFilter.cs" />
-    <Compile Include="Business\TestImageFilter.cs" />
-    <Compile Include="IOFiles\TestGetImage.cs" />
-    <Compile Include="IOFiles\TestSaveImage.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TestLogicController.cs" />
+    <Compile Include="TestReadWriteController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageEdgeDetection\ImageEdgeDetection.csproj">
+      <Project>{60565bf5-b971-46a4-a9d4-10fe1ff7d17b}</Project>
+      <Name>ImageEdgeDetection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagesForTesting\testImg.png" />
+    <Content Include="imagesForTesting\testImgGaussianRainbow.png" />
+    <Content Include="imagesForTesting\testImgGaussianRainbowZen.png" />
+    <Content Include="imagesForTesting\testImgGaussianZen.png" />
+    <Content Include="imagesForTesting\testImgPrewittRainbow.png" />
+    <Content Include="imagesForTesting\testImgPrewittRainbowZen.png" />
+    <Content Include="imagesForTesting\testImgPrewittZen.png" />
+    <Content Include="imagesForTesting\testImgRainbow.png" />
+    <Content Include="imagesForTesting\testImgZen.png" />
+    <Content Include="imagesForTesting\testImgZenRainbow.png" />
+    <Content Include="imagesForTesting\testImgZenZero.png" />
+    <Content Include="testImgZenZero.png" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

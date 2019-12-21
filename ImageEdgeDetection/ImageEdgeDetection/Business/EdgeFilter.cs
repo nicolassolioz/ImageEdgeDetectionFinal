@@ -13,7 +13,7 @@ namespace ImageEdgeDetection.Business
     {
         public Bitmap prewittEdge(Bitmap importedImg)
         {
-            Bitmap modifiedImg = ExtBitmap.PrewittFilter(importedImg, true);
+            Bitmap modifiedImg = ExtBitmap.PrewittFilter(importedImg, false);
             return modifiedImg;
         }
 
