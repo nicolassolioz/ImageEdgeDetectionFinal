@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ImageEdgeDetection.IOFiles
 {
-    class GetImage
+    public class GetImage
     {
         public Bitmap read()
         {

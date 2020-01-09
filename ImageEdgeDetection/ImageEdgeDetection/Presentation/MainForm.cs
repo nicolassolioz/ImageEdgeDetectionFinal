@@ -1,4 +1,5 @@
 ﻿using ImageEdgeDetection.Business;
+using ImageEdgeDetection.IOFiles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,13 +75,15 @@ namespace ImageEdgeDetection.Presentation
         // button action IO
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            logicController.writeImage(previewBitmap);
+            ReadWriteController readWrite = new ReadWriteController();
+            logicController.writeImage(readWrite, previewBitmap);
             ApplyFilter();
         }
 
         private void buttonLoad_Click(object sender, EventArgs e)
         {
-            originalBitmap = logicController.readImage();
+            ReadWriteController readWrite = new ReadWriteController();
+            originalBitmap = logicController.readImage(readWrite);
             disableCheckboxes();
             disableRadiobutton();            
             ApplyFilter();            

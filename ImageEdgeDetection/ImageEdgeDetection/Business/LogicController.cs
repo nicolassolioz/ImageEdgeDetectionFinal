@@ -12,10 +12,11 @@ namespace ImageEdgeDetection.Business
     {
         private readonly IReadWriteController readWrite;
 
+        
         public LogicController(IReadWriteController readWrite)
         {
             this.readWrite = readWrite;
-        }     
+        }    
 
         public Bitmap zenFilter(Bitmap importedImg, int alpha, int red, int blue, int green)
         {
@@ -47,12 +48,12 @@ namespace ImageEdgeDetection.Business
             return edgeFilter.gaussianEdge(importedImg);
         }
 
-        public Bitmap readImage()
+        public Bitmap readImage(IReadWriteController readWrite)
         {            
             return readWrite.read();
         }
 
-        public void writeImage(Bitmap bitmap)
+        public void writeImage(IReadWriteController readWrite, Bitmap bitmap)
         {
             readWrite.write(bitmap);
         }

@@ -62,7 +62,6 @@ namespace TestImageEdgeDetection
             bmp2.UnlockBits(bitmapData2);
         }
 
-
         public Bitmap[] getImageResultMatrice()
         {
             Bitmap imgGaussianRainbow = new Bitmap("../../imagesForTesting/testImgGaussianRainbow.png");
