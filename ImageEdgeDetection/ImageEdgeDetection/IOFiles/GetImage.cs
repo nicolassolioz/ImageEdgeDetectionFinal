@@ -11,12 +11,11 @@ namespace ImageEdgeDetection.IOFiles
 {
     class GetImage
     {
-        public Bitmap read()
+        public Bitmap read(IOFD ofd)
         {
             Bitmap originalBitmap = null;
 
             //open dialog in order to load image
-            OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Select an image file.";
             ofd.Filter = "Png Images(*.png)|*.png|" +
                             "Jpeg Images(*.jpg)|*.jpg|" +

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageEdgeDetection.Dialogs;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -12,12 +13,11 @@ namespace ImageEdgeDetection.IOFiles
 {
     class SaveImage
     {
-        public void write(Bitmap importedImg)
+        public void write(ISFD sfd, Bitmap importedImg)
         {
             //open dialog in order to save the modified image
             if (importedImg != null)
             {
-                SaveFileDialog sfd = new SaveFileDialog();
                 sfd.Title = "Specify a file name and file path";
                 sfd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
                 sfd.Filter += "|Bitmap Images(*.bmp)|*.bmp";

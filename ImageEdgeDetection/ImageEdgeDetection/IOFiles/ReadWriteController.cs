@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageEdgeDetection.Dialogs;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -9,16 +10,16 @@ namespace ImageEdgeDetection.IOFiles
 {
     public class ReadWriteController : IReadWriteController
     {
-        public Bitmap read()
+        public Bitmap read(IOFD ofd)
         {
             GetImage getImage = new GetImage();
-            return getImage.read();
+            return getImage.read(ofd);
         }
 
-        public void write(Bitmap importedImg)
+        public void write(ISFD sfd, Bitmap importedImg)
         {
             SaveImage saveImage = new SaveImage();
-            saveImage.write(importedImg);
+            saveImage.write(sfd, importedImg);
         }
     }
 }

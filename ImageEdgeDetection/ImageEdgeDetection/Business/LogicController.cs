@@ -1,4 +1,5 @@
-﻿using ImageEdgeDetection.IOFiles;
+﻿using ImageEdgeDetection.Dialogs;
+using ImageEdgeDetection.IOFiles;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -47,14 +48,14 @@ namespace ImageEdgeDetection.Business
             return edgeFilter.gaussianEdge(importedImg);
         }
 
-        public Bitmap readImage()
+        public Bitmap readImage(IOFD ofd)
         {            
-            return readWrite.read();
+            return readWrite.read(ofd);
         }
 
-        public void writeImage(Bitmap bitmap)
+        public void writeImage(ISFD sfd, Bitmap bitmap)
         {
-            readWrite.write(bitmap);
+            readWrite.write(sfd, bitmap);
         }
 
 

@@ -66,18 +66,25 @@ namespace TestImageEdgeDetection
         public Bitmap[] getImageResultMatrice()
         {
             Bitmap imgGaussianRainbow = new Bitmap("../../imagesForTesting/testImgGaussianRainbow.png");
+            Bitmap imgGaussianRainbowSwap = new Bitmap("../../imagesForTesting/testImgGaussianRainbowSwap.png");
             Bitmap imgGaussianRainbowZen = new Bitmap("../../imagesForTesting/testImgGaussianRainbowZen.png");
+            Bitmap imgGaussianRainbowZenSwap = new Bitmap("../../imagesForTesting/testImgGaussianRainbowZenSwap.png");
+            Bitmap imgGaussianSwap = new Bitmap("../../imagesForTesting/testImgGaussianSwap.png");
             Bitmap imgGaussianZen = new Bitmap("../../imagesForTesting/testImgGaussianZen.png");
+            Bitmap imgGaussianZenSwap = new Bitmap("../../imagesForTesting/testImgGaussianZenSwap.png");
             Bitmap imgPrewittRainbow = new Bitmap("../../imagesForTesting/testImgPrewittRainbow.png");
+            Bitmap imgPrewittRainbowSwap = new Bitmap("../../imagesForTesting/testImgPrewittRainbowSwap.png");
             Bitmap imgPrewittRainbowZen = new Bitmap("../../imagesForTesting/testImgPrewittRainbowZen.png");
+            Bitmap imgPrewittRainbowZenSwap = new Bitmap("../../imagesForTesting/testImgPrewittRainbowZenSwap.png");
+            Bitmap imgPrewittSwap = new Bitmap("../../imagesForTesting/testImgPrewittSwap.png");
             Bitmap imgPrewittZen = new Bitmap("../../imagesForTesting/testImgPrewittZen.png");
-            Bitmap imgRainbow = new Bitmap("../../imagesForTesting/testImgRainbow.png");
-            Bitmap imgZen = new Bitmap("../../imagesForTesting/testImgZen.png");
-            Bitmap imgZenRainbow = new Bitmap("../../imagesForTesting/testImgZenRainbow.png");
-            Bitmap imgZenZero = new Bitmap("../../imagesForTesting/testImgZenZero.png");
+            Bitmap imgPrewittZenSwap = new Bitmap("../../imagesForTesting/testImgPrewittZenSwap.png");
 
-            Bitmap[] imgMatrice = new Bitmap[10] {imgGaussianRainbow, imgGaussianRainbowZen, imgGaussianZen, imgPrewittRainbow, imgPrewittRainbowZen,
-                                                imgPrewittZen, imgRainbow, imgZen, imgZenRainbow, imgZenZero};
+            Bitmap[] imgMatrice = new Bitmap[14] {imgGaussianRainbow, imgGaussianRainbowSwap, imgGaussianRainbowZen,
+                                                imgGaussianRainbowZenSwap, imgGaussianSwap, imgGaussianZen,
+                                                imgGaussianZenSwap, imgPrewittRainbowSwap, imgPrewittRainbow,
+                                                imgPrewittRainbowZen, imgPrewittRainbowZenSwap, imgPrewittSwap,
+                                                imgPrewittZen, imgPrewittZenSwap};
 
             return imgMatrice;
         }
@@ -116,9 +123,43 @@ namespace TestImageEdgeDetection
 
             Bitmap imgZenZero = lc.zenFilter(control, 0, 0, 0, 0);
 
-            Bitmap[] imgMatrice = new Bitmap[10] {imgGaussianRainbow, imgGaussianRainbowZen, imgGaussianZen, imgPrewittRainbow, imgPrewittRainbowZen,
-                                                imgPrewittZen, imgRainbow, imgZen, imgZenRainbow, imgZenZero};
+            Bitmap imgGaussianRainbowSwap = lc.rainbowFilter(control);
+            imgGaussianRainbowSwap = lc.swapFilter(imgGaussianRainbowSwap);
+            imgGaussianRainbowSwap = lc.gaussianEdge(imgGaussianRainbowSwap);
 
+            Bitmap imgGaussianRainbowZenSwap = lc.rainbowFilter(control);
+            imgGaussianRainbowZenSwap = lc.zenFilter(imgGaussianRainbowZenSwap, 1, 10, 1, 1);
+            imgGaussianRainbowZenSwap = lc.swapFilter(imgGaussianRainbowZenSwap);
+            imgGaussianRainbowZenSwap = lc.gaussianEdge(imgGaussianRainbowZenSwap);
+
+            Bitmap imgGaussianSwap = lc.swapFilter(control);
+            imgGaussianSwap = lc.gaussianEdge(imgGaussianSwap);
+
+            Bitmap imgGaussianZenSwap = lc.zenFilter(control, 1, 10, 1, 1);
+            imgGaussianZenSwap = lc.swapFilter(imgGaussianZenSwap);
+            imgGaussianZenSwap = lc.gaussianEdge(imgGaussianZenSwap);
+
+            Bitmap imgPrewittRainbowSwap = lc.rainbowFilter(control);
+            imgPrewittRainbowSwap = lc.swapFilter(imgPrewittRainbowSwap);
+            imgPrewittRainbowSwap = lc.prewittEdge(imgPrewittRainbowSwap);
+
+            Bitmap imgPrewittRainbowZenSwap = lc.rainbowFilter(control);
+            imgPrewittRainbowZenSwap = lc.zenFilter(imgPrewittRainbowZenSwap, 1, 10, 1, 1);
+            imgPrewittRainbowZenSwap = lc.swapFilter(imgPrewittRainbowZenSwap);
+            imgPrewittRainbowZenSwap = lc.prewittEdge(imgPrewittRainbowZenSwap);
+
+            Bitmap imgPrewittSwap = lc.swapFilter(control);
+            imgPrewittSwap = lc.prewittEdge(imgPrewittSwap);
+
+            Bitmap imgPrewittZenSwap = lc.zenFilter(control, 1, 10, 1, 1);
+            imgPrewittZenSwap = lc.swapFilter(imgPrewittZenSwap);
+            imgPrewittZenSwap = lc.prewittEdge(imgPrewittZenSwap);
+
+            Bitmap[] imgMatrice = new Bitmap[14] {imgGaussianRainbow, imgGaussianRainbowSwap, imgGaussianRainbowZen,
+                                                imgGaussianRainbowZenSwap, imgGaussianSwap, imgGaussianZen,
+                                                imgGaussianZenSwap, imgPrewittRainbowSwap, imgPrewittRainbow,
+                                                imgPrewittRainbowZen, imgPrewittRainbowZenSwap, imgPrewittSwap,
+                                                imgPrewittZen, imgPrewittZenSwap};
             return imgMatrice;
         }
 

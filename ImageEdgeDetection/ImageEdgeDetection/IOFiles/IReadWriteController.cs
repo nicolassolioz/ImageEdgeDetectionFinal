@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ImageEdgeDetection.Dialogs;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace ImageEdgeDetection.IOFiles
 {
     public interface IReadWriteController
     {
-        void write(Bitmap importedImg);
-        Bitmap read();
+        void write(ISFD sfd, Bitmap importedImg);
+        Bitmap read(IOFD ofd);
     }
 }

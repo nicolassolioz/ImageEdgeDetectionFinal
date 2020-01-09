@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ImageEdgeDetection.Dialogs;
+using ImageEdgeDetection.IOFiles;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -14,7 +16,7 @@ namespace ImageEdgeDetection.Business
         Bitmap zenFilter(Bitmap bmp, int alpha, int red, int blue, int green);
         Bitmap rainbowFilter(Bitmap bmp);
         Bitmap swapFilter(Bitmap bmp);
-        void writeImage(Bitmap bmp);
-        Bitmap readImage();
+        void writeImage(ISFD sfd, Bitmap bmp);
+        Bitmap readImage(IOFD ofd);
     }
 }

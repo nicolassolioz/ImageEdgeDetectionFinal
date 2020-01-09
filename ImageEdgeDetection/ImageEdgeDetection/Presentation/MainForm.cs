@@ -1,4 +1,6 @@
 ﻿using ImageEdgeDetection.Business;
+using ImageEdgeDetection.Dialogs;
+using ImageEdgeDetection.IOFiles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,13 +76,18 @@ namespace ImageEdgeDetection.Presentation
         // button action IO
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            logicController.writeImage(previewBitmap);
+            ISFD sfd = new SFD();
+
+
+            logicController.writeImage(sfd, previewBitmap);
             ApplyFilter();
         }
 
         private void buttonLoad_Click(object sender, EventArgs e)
         {
-            originalBitmap = logicController.readImage();
+            IOFD ofd = new OFD();
+            
+            originalBitmap = logicController.readImage(ofd);
             disableCheckboxes();
             disableRadiobutton();            
             ApplyFilter();            
