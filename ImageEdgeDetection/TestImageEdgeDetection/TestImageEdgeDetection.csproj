@@ -76,6 +76,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imagesForTesting\testImg.bmp" />
+    <Content Include="imagesForTesting\testImg.jpg" />
     <Content Include="imagesForTesting\testImg.png" />
     <Content Include="imagesForTesting\testImgGaussianRainbow.png" />
     <Content Include="imagesForTesting\testImgGaussianRainbowSwap.png" />

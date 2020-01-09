@@ -9,7 +9,8 @@ namespace ImageEdgeDetection.IOFiles
 {
 
     //OFD = OpenFileDialog
-    //Cette classe représente la boîte de dialogue que l'utilisateur utilise pour charger une image
+    //This class represents a dialog box we use to load an image
+    //We manually create this class in order to test it more efficently
     
     public class OFD : IOFD
     {

@@ -7,6 +7,10 @@ using System.Windows.Forms;
 
 namespace ImageEdgeDetection.Dialogs
 {
+
+    //SFD = SaveFileDialog
+    //This class represents a dialog box we use to save an image
+    //We manually create this class in order to test it more efficently
     public class SFD : ISFD
     {
         public SaveFileDialog m_dialog;

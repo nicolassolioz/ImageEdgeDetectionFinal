@@ -17,6 +17,7 @@ namespace TestImageEdgeDetection
     public class TestLogicController
     {
 
+        //loop through two arrays of Bitmaps comparing, one row at a time, if both Bitmaps are equal
         [TestMethod]
         public void testAllFilterEdgeCombinations()
         {
@@ -30,9 +31,8 @@ namespace TestImageEdgeDetection
                 compareTwoImages(imgResultMatrice[i], imgControlMatrice[i]);
             }
         }
-
-        
-        
+      
+        //compare the value of two bitmaps and assert true if they are equal
         public void compareTwoImages(Bitmap bmp1, Bitmap bmp2)
         {
             //code from http://csharpexamples.com/c-fast-bitmap-compare/
@@ -62,7 +62,7 @@ namespace TestImageEdgeDetection
             bmp2.UnlockBits(bitmapData2);
         }
 
-
+        //return a Bitmap array with all the images we use for testing
         public Bitmap[] getImageResultMatrice()
         {
             Bitmap imgGaussianRainbow = new Bitmap("../../imagesForTesting/testImgGaussianRainbow.png");
@@ -89,6 +89,7 @@ namespace TestImageEdgeDetection
             return imgMatrice;
         }
 
+        //generate an array of bitmaps using our filter and edge code, we compare them later
         public Bitmap[] getImageControlMatrice(Bitmap control)
         {
             IReadWriteController rw = new ReadWriteController();

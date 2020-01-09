@@ -54,12 +54,10 @@ namespace ImageEdgeDetection.Business
         }
 
 
-        //Rainbow Filter
         public Bitmap rainbowFilter(Bitmap bmp)
         {
 
             Bitmap temp = new Bitmap(bmp.Width, bmp.Height);
-            // Correction !!!!!!!!!!!!!!!
             int raz = bmp.Width / 4;
             for (int i = 0; i < bmp.Width; i++)
             {
@@ -89,7 +87,6 @@ namespace ImageEdgeDetection.Business
         }
 
 
-    // Swap Filter
     public Bitmap swapFilter(Bitmap bmp)
         {
             Bitmap temp = new Bitmap(bmp.Width, bmp.Height);

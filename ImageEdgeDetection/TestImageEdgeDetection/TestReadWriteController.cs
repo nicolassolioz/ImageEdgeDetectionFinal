@@ -22,6 +22,8 @@ namespace TestImageEdgeDetection
         [TestMethod]
         public void read()
         {
+            //substitute our open file dialog with our own parameters in order to "trick" windows into not opening the dialog box
+
             var ofd = Substitute.For<IOFD>();
             string FileName = "../../imagesForTesting/testImg.png";
             ofd.FileName = FileName;
@@ -35,16 +37,19 @@ namespace TestImageEdgeDetection
 
             Bitmap testImage = new Bitmap("../../imagesForTesting/testImg.png");
 
+            //compare our test image with the image we've just loaded
             compareTwoImages(resultImage, testImage);
         }
 
         [TestMethod]
         public void write()
         {
+            //substitute our save file dialog with our own parameters in order to "trick" windows into not opening the dialog box
             Bitmap testImage = new Bitmap("../../imagesForTesting/testImg.png");
 
             var sfd = Substitute.For<ISFD>();
             string FileName = "../../imagesForTesting/testImgUNITTEST.png";
+
             sfd.FileName = FileName;
 
             sfd.ShowDialog().Returns(DialogResult.OK);
@@ -52,17 +57,20 @@ namespace TestImageEdgeDetection
             IReadWriteController readWriteController = new ReadWriteController();
             ILogicController logicController = new LogicController(readWriteController);
 
+            //creates an image in our folder with the name "testImgUNITTEST"
             logicController.writeImage(sfd, testImage);
-
+            
             Bitmap resultImage = new Bitmap("../../imagesForTesting/testImgUNITTEST.png");
 
+            //verify the image has been created
             Assert.IsNotNull(resultImage);
-            
 
             resultImage.Dispose();
             testImage.Dispose();
 
+            //destroy the created image
             File.Delete(FileName);
+
         }
 
         public void compareTwoImages(Bitmap bmp1, Bitmap bmp2)
