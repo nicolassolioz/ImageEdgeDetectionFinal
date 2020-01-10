@@ -121,8 +121,13 @@ namespace ImageEdgeDetection.Presentation
             ApplyFilter();
         }
 
+        private void radioNone_CheckedChanged(object sender, EventArgs e)
+        {
+            ApplyFilter();
+        }
 
-        // enable/disable group elements
+
+        // enable filter checkbox when image is load
         public void enableCheckboxes()
         {
             checkBoxRainbowFilter.Enabled = true;
@@ -130,6 +135,7 @@ namespace ImageEdgeDetection.Presentation
             checkBoxZenFilter.Enabled = true;
         }
 
+        // If load a new picture, reset all filters
         public void disableCheckboxes()
         {
             checkBoxRainbowFilter.Enabled = false;
@@ -140,14 +146,15 @@ namespace ImageEdgeDetection.Presentation
             checkBoxZenFilter.Checked = false;
         }
 
-
-
+        // when a filter is select, enable all radio button
         private void enableRadiobutton()
         {
             radioGaussianEdge.Enabled = true;
             radioPrewittEdge.Enabled = true;
             radioNone.Enabled = true;
         } 
+
+        // when all filter are unchecked, restet and disable radio button
         private void disableRadiobutton()
         {
             radioGaussianEdge.Enabled = false;

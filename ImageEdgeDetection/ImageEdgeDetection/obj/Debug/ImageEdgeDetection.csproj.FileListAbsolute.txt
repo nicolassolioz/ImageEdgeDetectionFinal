@@ -14,3 +14,19 @@ C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDet
 C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csprojAssemblyReference.cache
 C:\Users\Nicolas Solioz\Documents\HES\Sem 7\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csproj.CopyComplete
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe.config
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.exe
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\ImageEdgeDetection.pdb
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\Castle.Core.dll
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\NSubstitute.dll
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\Castle.Core.xml
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\NSubstitute.xml
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csprojAssemblyReference.cache
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.Presentation.MainForm.resources
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.Properties.Resources.resources
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csproj.GenerateResource.cache
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.csproj.CopyComplete
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.exe
+C:\Users\Bornatch\Documents\GitHub\ImageEdgeDetectionFinal\ImageEdgeDetection\ImageEdgeDetection\obj\Debug\ImageEdgeDetection.pdb

@@ -163,6 +163,7 @@ namespace ImageEdgeDetection.Presentation
             this.radioNone.TabStop = true;
             this.radioNone.Text = "None";
             this.radioNone.UseVisualStyleBackColor = true;
+            this.radioNone.CheckedChanged += new System.EventHandler(this.radioNone_CheckedChanged);
             // 
             // labelFilter
             // 
