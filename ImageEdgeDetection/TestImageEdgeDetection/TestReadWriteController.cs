@@ -19,6 +19,20 @@ namespace TestImageEdgeDetection
     [TestClass]
     public class TestReadWriteController
     {
+
+        //Unit test exception for reading image
+        [TestMethod]
+        public void TestReadException()
+        {
+            var ofd = Substitute.For<IOFD>();
+            ofd.ShowDialog().Returns(x => { throw new Exception(); });
+
+            IReadWriteController readWriteController = new ReadWriteController();
+            ILogicController logicController = new LogicController(readWriteController);
+
+            Assert.ThrowsException<Exception>(() => logicController.readImage(ofd));
+        }
+
         [TestMethod]
         public void read()
         {
