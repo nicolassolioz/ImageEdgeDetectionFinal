@@ -56,8 +56,6 @@ namespace ImageEdgeDetection.Business
         public void writeImage(ISFD sfd, Bitmap bitmap)
         {
             readWrite.write(sfd, bitmap);
-        }
-
-
+        }        
     }
 }

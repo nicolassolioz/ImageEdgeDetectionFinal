@@ -19,7 +19,6 @@ namespace TestImageEdgeDetection
     [TestClass]
     public class TestReadWriteController
     {
-
         //Unit test exception for reading image
         [TestMethod]
         public void TestReadException()

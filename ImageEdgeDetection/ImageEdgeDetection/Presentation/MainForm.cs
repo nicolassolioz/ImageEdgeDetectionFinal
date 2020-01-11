@@ -56,22 +56,18 @@ namespace ImageEdgeDetection.Presentation
             else if(radioPrewittEdge.Checked)
                 previewBitmap = logicController.prewittEdge(previewBitmap);
 
-
-            //activate "next" button only if one or two checkboxes are activated
+            //activate radio buttons only if one or more checkboxes are checked
             if (checkBoxZenFilter.Checked || checkBoxRainbowFilter.Checked || checkBoxSwapFilter.Checked)        
                 enableRadiobutton();
             else disableRadiobutton();
 
-
-
+            //activate "Save" button only if one radio button is activated
             if (radioNone.Checked || radioGaussianEdge.Checked || radioPrewittEdge.Checked)
                 enableSavebutton();
             else disableSavebutton();
 
             picPreview.Image = previewBitmap;
-        }
-
-       
+        }       
 
         // button action IO
         private void buttonSave_Click(object sender, EventArgs e)
@@ -109,7 +105,6 @@ namespace ImageEdgeDetection.Presentation
             ApplyFilter();
         }
 
-
         //radio action event
         private void radioGaussianEdge_CheckedChanged(object sender, EventArgs e)
         {            
@@ -133,6 +128,25 @@ namespace ImageEdgeDetection.Presentation
             checkBoxRainbowFilter.Enabled = true;
             checkBoxSwapFilter.Enabled = true;
             checkBoxZenFilter.Enabled = true;
+        }      
+
+        // when a filter is select, enable all radio button
+        private void enableRadiobutton()
+        {
+            radioGaussianEdge.Enabled = true;
+            radioPrewittEdge.Enabled = true;
+            radioNone.Enabled = true;
+        } 
+
+        // when all filter are unchecked, reset and disable radio button
+        private void disableRadiobutton()
+        {
+            radioGaussianEdge.Enabled = false;
+            radioGaussianEdge.Checked = false;
+            radioPrewittEdge.Enabled = false;
+            radioPrewittEdge.Checked = false;
+            radioNone.Enabled = false;
+            radioNone.Checked = false;
         }
 
         // If load a new picture, reset all filters
@@ -146,26 +160,7 @@ namespace ImageEdgeDetection.Presentation
             checkBoxZenFilter.Checked = false;
         }
 
-        // when a filter is select, enable all radio button
-        private void enableRadiobutton()
-        {
-            radioGaussianEdge.Enabled = true;
-            radioPrewittEdge.Enabled = true;
-            radioNone.Enabled = true;
-        } 
-
-        // when all filter are unchecked, restet and disable radio button
-        private void disableRadiobutton()
-        {
-            radioGaussianEdge.Enabled = false;
-            radioGaussianEdge.Checked = false;
-            radioPrewittEdge.Enabled = false;
-            radioPrewittEdge.Checked = false;
-            radioNone.Enabled = false;
-            radioNone.Checked = false;
-
-        }
-
+        // enable save button if one or more filter are cheked and if a radio button is checked, disable it otherwise
         private void enableSavebutton()
         {
             buttonSave.Enabled = true;
